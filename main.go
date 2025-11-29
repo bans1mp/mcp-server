@@ -25,4 +25,5 @@ func initMcpServer() *mcp.Server {
 
 func initMcpTools(server *mcp.Server) {
 	mcp.AddTool(server, tools.UpdateNotesTool, tools.UpdateNotes)
+	mcp.AddTool(server, tools.GetTopSongsTool, tools.GetTopSongs)
 }
